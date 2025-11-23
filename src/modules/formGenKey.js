@@ -1,4 +1,4 @@
-import genKey from './generators';
+import genKey from './generators.js';
 
 const generatedKeyLabel = document.querySelector('.key-generated-label');
 const qtdCaracters = document.querySelector('.qtd-caracters');

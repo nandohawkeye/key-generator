@@ -1,6 +1,14 @@
-const path = require('path'); // CommonJS
+import path from "path";
+import { fileURLToPath } from "url";
 
-module.exports = {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+
+export default {
+  // resolve: {
+  //   fullySpecified: false,
+  // },
   mode: 'production',
   entry: './src/main.js',
   output: {
